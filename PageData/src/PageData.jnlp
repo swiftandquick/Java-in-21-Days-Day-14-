@@ -1,0 +1,30 @@
+<!-- Specifies the file is xml file and uses utf-8 charset.  -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JNLP File for the PageData Application.  Used to configure Web Start.  -->
+<jnlp codebase="http://cadenhead.org/book/java-21-days/java" href="PageData.jnlp">
+    <information>
+        <!-- Set the title.  -->
+        <title>Page Data Application</title>
+        <!-- Contains the author's name.  -->
+        <vendor>Yong Chen</vendor>
+        <!-- Defines the home page, the web page that users should visit if 
+            they want to read more about the program and how it works.  -->
+        <homepage href="http://www.java21days.com"/>
+        <!-- Set the icon.  -->
+        <icon href="pagedataicon.gif"/>
+        <!-- Use does not need to connect to the Internet to use this app.  -->
+        <offline-allowed/>
+    </information>
+    <resources>
+        <!-- The j2se tag is used to check the version of the JVM.  -->
+        <j2se version="1.8"/>
+        <jar href="PageData.jar"/>
+    </resources>
+    <!-- Defines the application that runs with security restriction.  -->
+    <security>
+        <!-- Specifies the application’s JAR file.  -->
+        <j2ee-application-client-permission/>
+    </security>
+    <!-- Identifies the name of the class file.  -->
+    <application-desc main-class="PageData" />
+</jnlp>
